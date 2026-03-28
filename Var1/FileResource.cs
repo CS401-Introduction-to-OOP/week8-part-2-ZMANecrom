@@ -16,6 +16,6 @@ public class FileResource : Resource, IDisposable
     public void Dispose()
     {
         Close();
-        Console.WriteLine("Network resource is closed");
+        Console.WriteLine($"Network {Name} resource is closed");
     }
 }
