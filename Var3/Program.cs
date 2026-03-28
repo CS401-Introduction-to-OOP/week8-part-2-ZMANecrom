@@ -24,4 +24,9 @@ class Program
         Console.WriteLine("GC.Collect() was called.");
         Console.WriteLine($"Total size after GC: {container.GetTotalSize()} bytes");
     }
+    
+    
 }
+
+// GC.Collect() видаляє обєкти на які нема покликань, а оскільки на всі 10000 обєктів які ми створили є покликання
+// на наш контейнер вони залишаються
